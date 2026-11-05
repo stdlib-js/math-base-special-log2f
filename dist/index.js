@@ -1,0 +1,6 @@
+"use strict";var L=function(e,v){return function(){try{return v||e((v={exports:{}}).exports,v),v.exports}catch(i){throw (v=0, i)}};};var F=L(function(g,T){
+var s=require('@stdlib/math-base-assert-is-nanf/dist'),r=require('@stdlib/number-float64-base-to-float32/dist'),O=require('@stdlib/number-float32-base-to-word/dist'),A=require('@stdlib/number-float32-base-from-word/dist'),M=require('@stdlib/constants-float32-abs-mask/dist'),E=require('@stdlib/constants-float32-exponent-bias/dist'),R=require('@stdlib/constants-float32-significand-mask/dist'),W=require('@stdlib/constants-float32-exponent-mask/dist'),I=require('@stdlib/constants-float32-num-significand-bits/dist'),D=require('@stdlib/constants-float32-ninf/dist'),K=require('@stdlib/math-base-special-kernel-log1pf/dist'),n=8388608,o=1065353216,c=-4096,d=4913933,h=r(33554432),S=r(1.4428710938),l=r(-.00017605285393);function p(e){var v,i,a,N,f,q,t,_,u;if(s(e)||e<0)return NaN;if(e=r(e),a=O(e)|0,u=0,a<n){if((a&M)===0)return D;u-=25,e=r(e*h),a=O(e)|0}return a>=W?r(e+e):a===o?0:(u+=(a>>I)-E|0,a&=R,_=a+d&n|0,e=A(a|_^o),u+=_>>I|0,t=r(u),f=r(e-r(1)),v=r(r(.5)*r(f*f)),q=K(f),i=r(f-v),a=O(i)|0,i=A(a&c),N=r(r(r(f-i)-v)+q),r(r(r(r(r(N+i)*l)+r(N*S))+r(i*S))+t))}T.exports=p
+});var B=F();module.exports=B;
+/** @license Apache-2.0 */
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
